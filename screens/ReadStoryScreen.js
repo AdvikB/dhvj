@@ -47,10 +47,11 @@ export default class ReadStoryScreen extends React.Component {
     const newData = this.state.allStories.filter((item)=> {
       //applying filter for the inserted text in search bar
       const itemData = item.title ? item.title.toUpperCase() : ''.toUpperCase();
-      //const textData = text.toUpperCase();
+      //correct answer
+      const textData = text.toUpperCase();
       // const textData = text.toUppercase();
       //const textData = text.toupperCase();
-      const textData = text.upperCase();
+    //   const textData = text.upperCase();
 
 
       return itemData.indexOf(textData) > -1;
